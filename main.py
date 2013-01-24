@@ -41,11 +41,7 @@ cmon_menu=1
 cmon_game=0
 
 while 1:
-<<<<<<< HEAD
 	while cmon_menu: # Menu loop, waiting for the level's choice
-=======
-  while cmon_menu: # Menu loop, waiting for the level's choice
->>>>>>> 77360af7bc14f0a836dfdfd8659fb9a3640bfe1d
 		window.blit(menu_bg, (0,0))
 		for event in pygame.event.get():
 			if event.type == KEYDOWN and event.key == K_F1:
@@ -80,14 +76,10 @@ while 1:
 			time.sleep(3)
 			cmon_game=0
 			cmon_menu=1
-<<<<<<< HEAD
 		# dk[0] : down
 		# dk[1] : up
 		# dk[2] : right
 		# dk[3] : left
-=======
-
->>>>>>> 77360af7bc14f0a836dfdfd8659fb9a3640bfe1d
 		if monster.last_movement == "down":
 			window.blit(dk[0], monster.position_rect)
 		elif monster.last_movement == "up":
@@ -117,8 +109,3 @@ while 1:
 
 		pygame.display.flip()
 # Done with love.
-<<<<<<< HEAD
-	
-=======
-	
->>>>>>> 77360af7bc14f0a836dfdfd8659fb9a3640bfe1d
